@@ -142,7 +142,7 @@ summary.out$which[3,]
 ```
 
 ```{r}
-best.model <- lm(Weight~Height+Width,data=Pike)
+best.model <- lm(Weight~Length1+Length3,data=Pike)
 summary(best.model)
 ```
 ```{r}
@@ -151,10 +151,10 @@ anova(best.model,Pikewtall)
 
 
 ### Best Models
-The best model is all the variables. 
+The best model is all the variables.   
 
 ### Best Two regressor model
-The best two regresser is length one and length two.   
+The best two regresser is length one and length two.    
 
 ## Roach
 
@@ -189,7 +189,7 @@ summary.out$which[3,]
 ```
 
 ```{r}
-best.model <- lm(Weight~Height+Width,data=Roach)
+best.model <- lm(Weight~Length3+Width,data=Roach)
 summary(best.model)
 ```
 ```{r}
@@ -197,7 +197,12 @@ anova(best.model,Roachwtall)
 ```
 
 ### Best Models
+The best model for the roach is all the variables   
 
 ### Best Two regressor model
 
-## Final Summary Statements
+The best to regresser models is length 3 and width.   
+
+## Final Summary
+
+Of the models presented the best models are the ones with all the variables. With Perch however the best to reggresor models would be heigth  and width. For pike on the other hand its length one and three. Lastly for roach the best 2 regresses model is data length 3 and width. 
